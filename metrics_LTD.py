@@ -3,8 +3,8 @@
 import xarray as xr
 import matplotlib.pyplot as plt
 
-model = 'cesm2'
-realisation = 'r1i1p1f1'
+model = 'ukesm'
+realisation = 'r1i1p1f2'
 
 obs = xr.open_dataset('../CMIP/Tair_merge.nc')
 umpd = xr.open_dataset('../output/unmappedtas_global_' + model + '.nc')

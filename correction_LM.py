@@ -7,8 +7,8 @@ register_matplotlib_converters()
 from scipy import stats
 
 
-model = 'cesm2'
-realisation = 'r1i1p1f1'
+model = 'ukesm'
+realisation = 'r1i1p1f2'
 tas = xr.open_dataset('../CMIP/tas_'+model+'_180.nc')
 tas = tas.sel(lat = slice(-56,84))
 

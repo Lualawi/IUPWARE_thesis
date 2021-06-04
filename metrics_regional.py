@@ -8,8 +8,8 @@ ar6 = pd.read_csv('../AR6.csv', index_col = 'names')
 ar6_names = list(ar6.index.values)
 ar6_names.remove('GIC')
 
-model = 'cesm2'
-realisation = 'r1i1p1f1'
+model = 'ukesm'
+realisation = 'r1i1p1f2'
 
 rmse_dif = xr.open_dataset('../output/rmse_dif_global_'+model+'.nc')
 rmse_difcor = xr.open_dataset('../output/rmse_difcor_global_'+model+'.nc')

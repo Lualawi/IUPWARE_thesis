@@ -8,8 +8,8 @@ from math import floor
 
 
 #import data
-realisation = 'r1i1p1f1'
-model = 'cesm2'
+realisation = 'r1i1p1f2'
+model = 'ukesm'
 lumip = xr.open_dataset('../CMIP/tasLut_'+ model + '_' + realisation + '_obs.nc')
 ds2 = xr.open_dataset('../CMIP/tas_'+ model + '_' + realisation + '_obs.nc')
 obs = xr.open_dataset('../CMIP/Tair_merge.nc')
